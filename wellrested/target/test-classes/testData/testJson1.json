@@ -1,0 +1,36 @@
+{
+  "year": 2017,
+  "isVisible": true,
+  "isEnabled": false,
+  "colour": "pink",
+  "colours": {
+    "colour1": "red",
+    "colour2": "blue",
+    "colour3": "yellow"
+  },
+  "colourArray": [
+    "purple",
+    "orange",
+    "green"
+  ],
+  "countries": [
+    {
+      "country": "france",
+      "capital": "paris",
+      "language": "french",
+      "currency": "euro"
+    },
+    {
+      "country": "usa",
+      "capital": "washington dc",
+      "language": "english",
+      "currency": "dollar"
+    },
+    {
+      "country": "canada",
+      "capital": "quebec",
+      "language": "french",
+      "currency": "canadian dollar"
+    }
+  ]
+}

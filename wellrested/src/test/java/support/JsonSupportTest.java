@@ -11,11 +11,11 @@ import static org.junit.Assert.assertTrue;
 
 public class JsonSupportTest {
 
-    private String json1 = new FileSupport().getFileAsString("src/test/resources/testData/testJson1.json");
-    private String json2 = new FileSupport().getFileAsString("src/test/resources/testData/testJson2.json");
-    private String json3 = new FileSupport().getFileAsString("src/test/resources/testData/testJson3.json");
+    private String json1 = new FileSupport().getFileAsString("testData/testJson1.json");
+    private String json2 = new FileSupport().getFileAsString("testData/testJson2.json");
+    private String json3 = new FileSupport().getFileAsString("testData/testJson3.json");
     private JsonSupport jsonSupport = new JsonSupport();
-    // TODO: Fix NullPointerException in unit test
+
     @Test
     public void testGetJsonElementFromPathForSingleAttribute() {
         String path1 = "colour";
