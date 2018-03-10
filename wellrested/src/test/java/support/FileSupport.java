@@ -18,12 +18,18 @@ public class FileSupport {
             e.printStackTrace();
         }
 
-        return contentBuilder.toString();
+        return contentBuilder.toString().replaceAll("\\n$", "");
     }
 
     private String getFilePath(String fileName) {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource(fileName).getFile());
         return file.getAbsolutePath();
+    }
+
+    public String getFileAsStringWithReplacement(String fileName, String target, String replacement)
+            throws IOException {
+        String fileContents = getFileAsString(fileName);
+        return fileContents.replace(target, replacement);
     }
 }
