@@ -18,7 +18,7 @@ public class FileSupport {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        // Remove last \n from returned String
         return contentBuilder.toString().replaceAll("\\n$", "");
     }
 
@@ -27,12 +27,6 @@ public class FileSupport {
         File file = new File(classLoader.getResource(fileName).getFile());
         return file.getAbsolutePath();
     }
-
-//    public String getFileAsStringWithReplacement(String fileName, String target, String replacement)
-//            throws IOException {
-//        String fileContents = getFileAsString(fileName);
-//        return fileContents.replace(target, replacement);
-//    }
 
     public String getFileAsStringWithReplacement(String fileName, Map<String, String> replacementMap)
             throws IOException {

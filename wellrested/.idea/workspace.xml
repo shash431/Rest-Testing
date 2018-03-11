@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b33b2c-4088-4224-adf0-aa0a36827276" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/replacement_for_file_with_single_line.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestData/FileSupportTestData/replacement_for_file_with_single_line.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file_with_single_line.json" afterPath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/replacement_for_file_with_multiple_lines.json" afterPath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/single_replacement_for_file.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/support/FileSupport.class" afterPath="$PROJECT_DIR$/target/test-classes/support/FileSupport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/support/FileSupportTest.class" afterPath="$PROJECT_DIR$/target/test-classes/support/FileSupportTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/support/FileSupport.java" afterPath="$PROJECT_DIR$/src/test/java/support/FileSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" afterPath="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +41,8 @@
       <file leaf-file-name="FileSupport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="417">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +73,8 @@
       <file leaf-file-name="FileSupportTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="421">
+              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,8 +181,8 @@
         <option value="$PROJECT_DIR$/src/test/java/support/JsonSupportTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/replacement_for_file_with_multiple_lines.json" />
         <option value="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/mutliple_replacements_for_file_with_single_line.json" />
-        <option value="$PROJECT_DIR$/src/test/java/support/FileSupport.java" />
         <option value="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/support/FileSupport.java" />
       </list>
     </option>
   </component>
@@ -813,9 +805,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileSupportTest - 2018.03.11 at 17h 34m 06s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileSupportTest - 2018.03.11 at 17h 38m 52s.xml">
       <configuration name="FileSupportTest" configurationId="JUnit" />
     </history-entry>
@@ -841,6 +830,9 @@
       <configuration name="FileSupportTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FileSupportTest - 2018.03.11 at 17h 52m 32s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 17h 56m 04s.xml">
       <configuration name="FileSupportTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1285,16 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/single_replacement_for_file.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1303,10 +1285,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="421">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
