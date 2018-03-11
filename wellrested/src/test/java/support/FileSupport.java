@@ -28,7 +28,7 @@ public class FileSupport {
         return file.getAbsolutePath();
     }
 
-    public String getFileAsStringWithReplacement(String fileName, Map<String, String> replacementMap)
+    public String getFileWithReplacementsAsString(String fileName, Map<String, String> replacementMap)
             throws IOException {
         String fileContents = getFileAsString(fileName);
         for (String key : replacementMap.keySet()) {

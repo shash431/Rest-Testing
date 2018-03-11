@@ -1,1 +1,4 @@
-{ "id": "%ID%", "another_id": "%ID%" }
+{
+  "id": "%ID%",
+  "another_id": "%ID%"
+}
