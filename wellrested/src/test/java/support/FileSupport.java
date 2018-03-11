@@ -1,10 +1,7 @@
 package support;
 
-import gherkin.lexer.No;
-
 import java.io.File;
 import java.io.IOException;
-import java.net.NoRouteToHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -35,11 +32,15 @@ public class FileSupport {
             throws IOException, NoReplacementsSpecifiedException {
         String fileContents = getFileAsString(fileName);
 
-        if (replacementMap.isEmpty()){
+        if (replacementMap == null || replacementMap.isEmpty()){
             throw new NoReplacementsSpecifiedException();
         }
 
         for (String key : replacementMap.keySet()) {
+            if (replacementMap.get(key) == null) {
+                throw new NoReplacementsSpecifiedException();
+            }
+
             fileContents = fileContents.replace(key, replacementMap.get(key));
         }
 

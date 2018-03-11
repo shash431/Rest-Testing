@@ -35,8 +35,8 @@ public class FileSupportTest {
         Map<String, String> replacementMap = getReplacementMapWithSingleEntry();
         String actual = fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, replacementMap);
         String expected = String.format("{\n" +
-                                        "  \"id\": \"%s\"" +
-                                        "\n}", REPLACEMENT_ID);
+                "  \"id\": \"%s\"" +
+                "\n}", REPLACEMENT_ID);
         assertThat(actual, is(expected));
     }
 
@@ -46,23 +46,48 @@ public class FileSupportTest {
         Map<String, String> replacementMap = getReplacementMapWithSingleEntry();
         String actual = fs.getFileWithReplacementsAsString(MULTIPLE_REPLACEMENTS_FILE, replacementMap);
         String expected = String.format("{\n" +
-                                        "  \"id\": \"%s\",\n" +
-                                        "  \"another_id\": \"%s\"\n" +
-                                        "}", REPLACEMENT_ID, REPLACEMENT_ID);
+                "  \"id\": \"%s\",\n" +
+                "  \"another_id\": \"%s\"\n" +
+                "}", REPLACEMENT_ID, REPLACEMENT_ID);
         assertThat(actual, is(expected));
     }
 
     @Test
     public void testGetFileWithReplacementsAsStringForMultipleDifferentReplacements() throws IOException,
             NoReplacementsSpecifiedException {
-        Map<String, String> replacementMap = getReplacementMapWithMultipleReplacements();
+        Map<String, String> replacementMap = getReplacementMapWithMultipleEntries();
 
-        String actual = fs.getFileWithReplacementsAsString(MULTIPLE_DIFFERENT_REPLACEMENTS_FILE , replacementMap);
+        String actual = fs.getFileWithReplacementsAsString(MULTIPLE_DIFFERENT_REPLACEMENTS_FILE, replacementMap);
         String expected = String.format("{\n" +
-                                        "  \"id\": \"%s\",\n" +
-                                        "  \"name\": \"%s\",\n" +
-                                        "  \"age\": \"%s\"\n" +
-                                        "}", REPLACEMENT_ID, REPLACEMENT_NAME, REPLACEMENT_AGE);
+                "  \"id\": \"%s\",\n" +
+                "  \"name\": \"%s\",\n" +
+                "  \"age\": \"%s\"\n" +
+                "}", REPLACEMENT_ID, REPLACEMENT_NAME, REPLACEMENT_AGE);
+        assertThat(actual, is(expected));
+    }
+
+    @Test
+    public void testGetFileWithReplacementsAsStringWhenReplacementTargetNotInFile() throws IOException,
+            NoReplacementsSpecifiedException {
+        Map<String, String> replacementMap = new HashMap<>();
+        replacementMap.put(AGE, REPLACEMENT_AGE);
+        String actual = fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, replacementMap);
+        String expected = String.format("{\n" +
+                "  \"id\": \"%s\"\n" +
+                "}", ID);
+        assertThat(actual, is(expected));
+    }
+
+    @Test
+    public void testGetFileWithReplacementsAsStringWhenSomeButNotAllReplacementTargetsInFile() throws IOException,
+            NoReplacementsSpecifiedException {
+        Map<String, String> replacementMap = new HashMap<>();
+        replacementMap.put(AGE, REPLACEMENT_AGE);
+        replacementMap.put(ID, REPLACEMENT_ID);
+        String actual = fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, replacementMap);
+        String expected = String.format("{\n" +
+                "  \"id\": \"%s\"\n" +
+                "}", REPLACEMENT_ID);
         assertThat(actual, is(expected));
     }
 
@@ -82,13 +107,47 @@ public class FileSupportTest {
         assertThat(actException.getMessage(), is(NO_REPLACEMENTS_SPECIFIED));
     }
 
+    @Test
+    public void testGetFileWithReplacementsAsStringWithNullReplacementsSpecified() throws IOException {
+        Map<String, String> nullReplacementMap = null;
+        NoReplacementsSpecifiedException expException = new NoReplacementsSpecifiedException();
+        NoReplacementsSpecifiedException actException = null;
+
+        try {
+            fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, nullReplacementMap);
+        } catch (NoReplacementsSpecifiedException ex) {
+            actException = ex;
+        }
+
+        assertEquals(expException.getClass(), actException.getClass());
+        assertThat(actException.getMessage(), is(NO_REPLACEMENTS_SPECIFIED));
+    }
+
+    @Test
+    public void testGetFileWithReplacementsAsStringWithNullReplacementEntrySpecified() throws IOException {
+        Map<String, String> replacementMapWithNullEntry = new HashMap<>();
+        replacementMapWithNullEntry.put(ID, null);
+
+        NoReplacementsSpecifiedException expException = new NoReplacementsSpecifiedException();
+        NoReplacementsSpecifiedException actException = null;
+
+        try {
+            fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, replacementMapWithNullEntry);
+        } catch (NoReplacementsSpecifiedException ex) {
+            actException = ex;
+        }
+
+        assertEquals(expException.getClass(), actException.getClass());
+        assertThat(actException.getMessage(), is(NO_REPLACEMENTS_SPECIFIED));
+    }
+
     private Map<String, String> getReplacementMapWithSingleEntry() {
         Map<String, String> replacements = new HashMap<>();
         replacements.put(ID, REPLACEMENT_ID);
         return replacements;
     }
 
-    private Map<String, String> getReplacementMapWithMultipleReplacements() {
+    private Map<String, String> getReplacementMapWithMultipleEntries() {
         Map<String, String> replacementMap = new HashMap<>();
         replacementMap.put(ID, REPLACEMENT_ID);
         replacementMap.put(NAME, REPLACEMENT_NAME);
