@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class FileSupport {
@@ -27,9 +28,19 @@ public class FileSupport {
         return file.getAbsolutePath();
     }
 
-    public String getFileAsStringWithReplacement(String fileName, String target, String replacement)
+//    public String getFileAsStringWithReplacement(String fileName, String target, String replacement)
+//            throws IOException {
+//        String fileContents = getFileAsString(fileName);
+//        return fileContents.replace(target, replacement);
+//    }
+
+    public String getFileAsStringWithReplacement(String fileName, Map<String, String> replacementMap)
             throws IOException {
         String fileContents = getFileAsString(fileName);
-        return fileContents.replace(target, replacement);
+        for (String key : replacementMap.keySet()) {
+            fileContents = fileContents.replace(key, replacementMap.get(key));
+        }
+
+        return fileContents;
     }
 }
