@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b33b2c-4088-4224-adf0-aa0a36827276" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/support/NoReplacementsSpecifiedException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/support/FileSupportTest.class" afterPath="$PROJECT_DIR$/target/test-classes/support/FileSupportTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/support/FileSupport.java" afterPath="$PROJECT_DIR$/src/test/java/support/FileSupport.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" afterPath="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file.json" afterPath="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="JsonSupportTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/support/JsonSupportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="178" column="60" lean-forward="false" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +45,8 @@
       <file leaf-file-name="FileSupport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+            <state relative-caret-position="287">
+              <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +77,25 @@
       <file leaf-file-name="FileSupportTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="492">
+              <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoReplacementsSpecifiedException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/support/NoReplacementsSpecifiedException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>java 7</find>
       <find>java 6</find>
       <find>java 1</find>
       <find>java 1.</find>
@@ -147,6 +163,7 @@
       <find>getFileAsString</find>
       <find>testJson</find>
       <find>ITEMS_ITEM_0_TOPPING_1_ID_PATH</find>
+      <find>assertGetJsonElementFromPathThrowsException</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer</replace>
@@ -197,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/single_replacement_for_file.json" />
         <option value="$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file.json" />
         <option value="$PROJECT_DIR$/src/test/java/support/FileSupport.java" />
+        <option value="$PROJECT_DIR$/src/test/java/support/NoReplacementsSpecifiedException.java" />
         <option value="$PROJECT_DIR$/src/test/java/support/FileSupportTest.java" />
       </list>
     </option>
@@ -380,6 +398,10 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -461,6 +483,8 @@
   </component>
   <component name="RecentsManager">
     <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="support.FileSupportTest" />
+      <recent name="support.NoReplacementsSpecifiedException" />
       <recent name="support.JsonSupportTest" />
       <recent name="support.RestSupport" />
       <recent name="support.ResponseSupport" />
@@ -820,34 +844,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 13m 13s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 14m 31s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 16m 02s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 18m 52s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 19m 28s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 21m 56s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 22m 55s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 23m 53s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSupportTest - 2018.03.11 at 18h 24m 54s.xml">
-      <configuration name="FileSupportTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileSupportTest - 2018.03.11 at 18h 25m 33s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 18h 33m 14s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 18h 42m 58s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 18h 57m 26s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 18h 59m 06s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 18h 59m 31s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 19h 02m 09s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 19h 02m 31s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 19h 06m 08s.xml">
+      <configuration name="FileSupportTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSupportTest - 2018.03.11 at 19h 07m 19s.xml">
       <configuration name="FileSupportTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -865,7 +889,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22072679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17765814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -877,7 +901,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50067294" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4347241" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -929,14 +953,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/JsonSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/support/JsonSupportTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1266,16 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/JsonSupportTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/single_replacement_for_file.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1292,6 +1298,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/support/JsonSupportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="178" column="60" lean-forward="false" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/TestData/FileSupportTestData/multiple_replacements_for_file.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1302,18 +1318,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        <state relative-caret-position="287">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/support/NoReplacementsSpecifiedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/support/FileSupportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="492">
+          <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

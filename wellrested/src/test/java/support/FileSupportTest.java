@@ -8,6 +8,7 @@ import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
 
 public class FileSupportTest {
 
@@ -24,11 +25,13 @@ public class FileSupportTest {
     private static final String REPLACEMENT_NAME = "Replacement Name%";
     private static final String AGE = "%AGE%";
     private static final String REPLACEMENT_AGE = "Replacement Age";
+    private static final String NO_REPLACEMENTS_SPECIFIED = "No replacements specified.";
 
     private FileSupport fs = new FileSupport();
 
     @Test
-    public void testGetFileAsStringWithReplacementForFile() throws IOException {
+    public void testGetFileWithReplacementsAsStringWithReplacementForFile() throws IOException,
+            NoReplacementsSpecifiedException {
         Map<String, String> replacementMap = getReplacementMapWithSingleEntry();
         String actual = fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, replacementMap);
         String expected = String.format("{\n" +
@@ -38,7 +41,8 @@ public class FileSupportTest {
     }
 
     @Test
-    public void testGetFileAsStringWithReplacementForMultipleReplacementsOfSameTarget() throws IOException {
+    public void testGetFileWithReplacementsAsStringForMultipleReplacementsOfSameTarget() throws IOException,
+            NoReplacementsSpecifiedException {
         Map<String, String> replacementMap = getReplacementMapWithSingleEntry();
         String actual = fs.getFileWithReplacementsAsString(MULTIPLE_REPLACEMENTS_FILE, replacementMap);
         String expected = String.format("{\n" +
@@ -49,7 +53,8 @@ public class FileSupportTest {
     }
 
     @Test
-    public void testGetFileAsStringWithReplacementForMultipleDifferentReplacements() throws IOException {
+    public void testGetFileWithReplacementsAsStringForMultipleDifferentReplacements() throws IOException,
+            NoReplacementsSpecifiedException {
         Map<String, String> replacementMap = getReplacementMapWithMultipleReplacements();
 
         String actual = fs.getFileWithReplacementsAsString(MULTIPLE_DIFFERENT_REPLACEMENTS_FILE , replacementMap);
@@ -59,6 +64,22 @@ public class FileSupportTest {
                                         "  \"age\": \"%s\"\n" +
                                         "}", REPLACEMENT_ID, REPLACEMENT_NAME, REPLACEMENT_AGE);
         assertThat(actual, is(expected));
+    }
+
+    @Test
+    public void testGetFileWithReplacementsAsStringWithNoReplacementsSpecified() throws IOException {
+        Map<String, String> emptyReplacementMap = new HashMap<>();
+        NoReplacementsSpecifiedException expException = new NoReplacementsSpecifiedException();
+        NoReplacementsSpecifiedException actException = null;
+
+        try {
+            fs.getFileWithReplacementsAsString(SINGLE_REPLACEMENT_FOR_FILE, emptyReplacementMap);
+        } catch (NoReplacementsSpecifiedException ex) {
+            actException = ex;
+        }
+
+        assertEquals(expException.getClass(), actException.getClass());
+        assertThat(actException.getMessage(), is(NO_REPLACEMENTS_SPECIFIED));
     }
 
     private Map<String, String> getReplacementMapWithSingleEntry() {
