@@ -28,7 +28,7 @@ formatter.match({
   "location": "ContactUsPageSteps.java:21"
 });
 formatter.result({
-  "duration": 6609335388,
+  "duration": 4172287256,
   "status": "passed"
 });
 formatter.scenario({
@@ -79,14 +79,14 @@ formatter.match({
   "location": "ContactUsPageSteps.java:25"
 });
 formatter.result({
-  "duration": 937299594,
+  "duration": 587450138,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsPageSteps.java:29"
 });
 formatter.result({
-  "duration": 517722108,
+  "duration": 579876727,
   "status": "passed"
 });
 formatter.background({
@@ -105,7 +105,7 @@ formatter.match({
   "location": "ContactUsPageSteps.java:21"
 });
 formatter.result({
-  "duration": 1423967938,
+  "duration": 677040864,
   "status": "passed"
 });
 formatter.scenario({
@@ -144,14 +144,14 @@ formatter.match({
   "location": "ContactUsPageSteps.java:34"
 });
 formatter.result({
-  "duration": 1039964475,
+  "duration": 1021568283,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsPageSteps.java:29"
 });
 formatter.result({
-  "duration": 143801232,
+  "duration": 184636915,
   "status": "passed"
 });
 formatter.background({
@@ -170,7 +170,7 @@ formatter.match({
   "location": "ContactUsPageSteps.java:21"
 });
 formatter.result({
-  "duration": 958005725,
+  "duration": 740745302,
   "status": "passed"
 });
 formatter.scenario({
@@ -209,14 +209,14 @@ formatter.match({
   "location": "ContactUsPageSteps.java:40"
 });
 formatter.result({
-  "duration": 1196195061,
+  "duration": 1038840901,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsPageSteps.java:29"
 });
 formatter.result({
-  "duration": 288744151,
+  "duration": 170283417,
   "status": "passed"
 });
 formatter.uri("answer.digital.who.are.we.page.feature");
@@ -287,14 +287,14 @@ formatter.match({
   "location": "WhoAreWePageSteps.java:17"
 });
 formatter.result({
-  "duration": 2003410571,
+  "duration": 1403765333,
   "status": "passed"
 });
 formatter.match({
   "location": "WhoAreWePageSteps.java:21"
 });
 formatter.result({
-  "duration": 305795193,
+  "duration": 526214423,
   "status": "passed"
 });
 formatter.scenario({
@@ -324,21 +324,21 @@ formatter.match({
   "location": "WhoAreWePageSteps.java:17"
 });
 formatter.result({
-  "duration": 1781917877,
+  "duration": 1284354905,
   "status": "passed"
 });
 formatter.match({
   "location": "WhoAreWePageSteps.java:26"
 });
 formatter.result({
-  "duration": 794534393,
+  "duration": 834658862,
   "status": "passed"
 });
 formatter.match({
   "location": "WhoAreWePageSteps.java:30"
 });
 formatter.result({
-  "duration": 790856362,
+  "duration": 371613956,
   "status": "passed"
 });
 });
